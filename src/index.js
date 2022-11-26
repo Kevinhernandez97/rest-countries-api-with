@@ -1,3 +1,1 @@
-import {manu} from './components/counstriesMap.js'
- 
-console.log(manu);
+import {data} from './components/counstriesMap.js'
