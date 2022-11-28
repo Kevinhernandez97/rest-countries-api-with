@@ -41,6 +41,7 @@ body {
     width: 200px;
     height: 40px;
     color: var(--darkModeTextModeElements);
+    margin-right: 25px;
 }
 .darkMode p {
     display: flex;
@@ -78,11 +79,11 @@ body {
     display: flex;
     justify-content: end;
     position: relative;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 .filter-region {
     display: flex;
-    width: 160px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     background-color: var(--darkModeElements);
@@ -91,12 +92,23 @@ body {
 }
 .filter-region h2{
     color: var(--lightModeBackground);
+    font-weight: 300;
     
+}
+.arrow-down-filter {
+    background-image: url(../design/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-size: 21px;
+    margin-left: 40px;
+    filter: invert(100%);
 }
 .filter-list {
     position: absolute;
     top: calc(83px - 50%);
-    width: 160px;
+    width: 200px;
     border-radius: 5px;
     background-color: var(--darkModeElements);
     color: var(--lightModeBackground);
@@ -106,4 +118,29 @@ body {
 .filter-list li {
     padding-bottom: 8px;
     list-style: none;
+}
+#countries-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.article-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 290px;
+    background-color: var(--darkModeElements);
+    margin-bottom: 20px;
+}
+.article-title,
+.article-subtitle{
+    color: var(--lightModeBackground);
+}
+.article-text {
+    color: var(--lightModeInput);
+}
+.country-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
