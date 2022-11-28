@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: var(--darkModeElements);
 }
 .header__title {
@@ -36,14 +36,17 @@ body {
   padding-left: 60px;
 }
 .header__darkMode {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
     width: 200px;
-    height: 40px;
+    height: 60px;
     color: var(--darkModeTextModeElements);
     margin-right: 25px;
 }
 .darkMode p {
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 100%;
@@ -67,19 +70,35 @@ body {
     width: 100%;
     padding-left: 50px;
 }
+.icon-search {
+    position: absolute;
+    min-width: 50px;
+    height: 50px;
+    width: 20px;
+    background-image: url('../design/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+    filter: invert(100%);
+}
 .search-country-input {
+    font-size: 2rem;
     border-radius: 4px;
+    padding-left: 50px;
     color: var(--darkModeTextModeElements);
     width: 350px;
     height: 50px;
     border: none;
     background-color: var(--darkModeElements);
 }
+.search-country-input::placeholder {
+    font-size: 1.5rem;
+}
 .filter-region-search {
     display: flex;
     justify-content: end;
     position: relative;
-    padding-right: 70px;
+    padding-right: 50px;
 }
 .filter-region {
     display: flex;
@@ -89,8 +108,10 @@ body {
     background-color: var(--darkModeElements);
     height: 50px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .filter-region h2{
+    display: flex;
     color: var(--lightModeBackground);
     font-weight: 300;
     
@@ -119,28 +140,45 @@ body {
     padding-bottom: 8px;
     list-style: none;
 }
-#countries-map {
+.countries-map {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    row-gap: 80px;
 }
 .article-container {
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 290px;
+    height: 330px;
     background-color: var(--darkModeElements);
-    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container-list {
+    padding: 0 20px 30px 20px;
 }
 .article-title,
 .article-subtitle{
     color: var(--lightModeBackground);
 }
+.article-title{
+    margin-bottom: 15px;
+}
+.description-text {
+    display: flex;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
 .article-text {
     color: var(--lightModeInput);
+
 }
 .country-image {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
     height: 100%;
+}
+.active {
+    display: none;
 }

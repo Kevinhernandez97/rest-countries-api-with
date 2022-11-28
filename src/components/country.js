@@ -3,19 +3,19 @@ export const country = (dataCountry) => {
 
   return `<article class="article-container">
   <div class="country-image" style="background-image: url('${dataCountry.flag}')"></div>
-  <div>
+  <div class="container-list">
     <h2 class='article-title'>${dataCountry.title}</h2>
     <section>
-      <div>
-        <p class="article-subtitle">Population:</p>
+      <div class="description-text">
+        <p class="article-subtitle">Population: </p>
         <span class="article-text">${dataCountry.population}</span>
       </div>
-      <div>
-        <p class="article-subtitle">Region:</p>
+      <div class="description-text">
+        <p class="article-subtitle">Region: </p>
         <span class="article-text">${dataCountry.region}</span>
       </div>
-      <div>
-        <p class="article-subtitle">Capital:</p>
+      <div class="description-text">
+        <p class="article-subtitle">Capital: </p>
         <span class="article-text">${dataCountry.capital}</span>
       </div>
     </section>
