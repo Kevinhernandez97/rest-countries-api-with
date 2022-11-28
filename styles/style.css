@@ -139,6 +139,7 @@ body {
 .filter-list li {
     padding-bottom: 8px;
     list-style: none;
+    cursor: pointer;
 }
 .countries-map {
     display: grid;
@@ -199,7 +200,7 @@ body {
     }
     .filter-list {
         top: calc(90px - 50%);
-        left: calc(237px - 50%);
+        margin-left: 20px;
     }
     .search-country-input {
         width: 380px;
