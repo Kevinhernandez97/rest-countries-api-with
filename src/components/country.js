@@ -20,5 +20,5 @@ export const country = (dataCountry) => {
       </div>
     </section>
   </div>
-</article>`;
-}
+</article>`
+};

@@ -8,6 +8,7 @@ data.map((dataCountry) => {
   const capital = dataCountry.capital;
   const region = dataCountry.region;
   const flag = dataCountry.flags.svg;
+  const name = dataCountry.name.common
 
   const newCountry = {
     title,
@@ -15,10 +16,13 @@ data.map((dataCountry) => {
     capital,
     region,
     flag,
+    name,
   }
 
   containerData.innerHTML += country(newCountry);
   console.log();
 });
+
+
 
 export { data };
