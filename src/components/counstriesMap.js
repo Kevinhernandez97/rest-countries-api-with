@@ -1,28 +1,26 @@
-import { getALlCountries } from '../services/getCountries.js';
-import { country } from './country.js';
-const containerData = document.querySelector('#countries-map');
-const data = await getALlCountries();
-data.map((dataCountry) => {
-  const title = dataCountry.name.official;
-  const population = dataCountry.population;
-  const capital = dataCountry.capital;
-  const region = dataCountry.region;
-  const flag = dataCountry.flags.svg;
-  const name = dataCountry.name.common
+import { country } from "./country.js";
 
-  const newCountry = {
-    title,
-    population,
-    capital,
-    region,
-    flag,
-    name,
-  }
+const containerData = document.querySelector("#countries-map");
+const showData = (data) => {
+  containerData.innerHTML = ''
+  data.map((dataCountry) => {
+    const population = dataCountry.population;
+    const capital = dataCountry.capital;
+    const region = dataCountry.region;
+    const flag = dataCountry.flags.svg;
+    const name = dataCountry.name.common;
 
-  containerData.innerHTML += country(newCountry);
-  console.log();
-});
+    const newCountry = {
+      population,
+      capital,
+      region,
+      flag,
+      name,
+    };
 
+    containerData.innerHTML += country(newCountry);
+    console.log();
+  });
+};
 
-
-export { data };
+export { showData };

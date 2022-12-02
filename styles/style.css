@@ -229,6 +229,7 @@ body {
   transition: all 0.9s;
 }
 .main__container-header.ligth input {
+  color: var(--lightModeText);
   background-color: var(--darkModeTextModeElements);
   box-shadow: var(--boxShadow);
 }
