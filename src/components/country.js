@@ -12,7 +12,7 @@ export const country = (dataCountry) => {
       </div>
       <div class="description-text">
         <p class="article-subtitle">Region: </p>
-        <span class="article-text">${dataCountry.region}</span>
+        <span class="article-text region-name">${dataCountry.region}</span>
       </div>
       <div class="description-text">
         <p class="article-subtitle">Capital: </p>

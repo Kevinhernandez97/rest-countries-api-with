@@ -90,8 +90,8 @@ body {
   filter: invert(100%);
 }
 .search-country-input {
-    width: 350px;
-    height: 50px;
+  width: 350px;
+  height: 50px;
   font-size: 2rem;
   border-radius: 4px;
   padding-left: 50px;
@@ -99,6 +99,7 @@ body {
   background-color: var(--darkModeElements);
   transition: all 0.3s;
   border: none;
+  outline: none;
 }
 .search-country-input::placeholder {
   font-size: 1.5rem;
@@ -152,6 +153,7 @@ body {
   cursor: pointer;
 }
 .countries-map {
+  min-height: calc(100vh - 180px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
